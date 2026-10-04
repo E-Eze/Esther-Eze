@@ -1,0 +1,145 @@
+/* Basic styles for the whole page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgb(21, 141, 211);
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 2px solid black;
+    outline-offset: 4px;
+}
+
+/* Name and navigation at the top */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Introduction and content sections */
+.hero {
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.eyebrow,
+.role,
+.date,
+.section-label {
+    font-size: 14px;
+}
+
+.intro {
+    font-size: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.section {
+    border-top: 1px solid black;
+    padding: 25px 0;
+}
+
+.section-label {
+    display: none;
+}
+
+.entry {
+    margin-bottom: 30px;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.role {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+footer {
+    border-top: 1px solid black;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* Keyboard shortcut to the main content */
+.skip {
+    position: absolute;
+    top: -100px;
+    left: 20px;
+    background: white;
+    padding: 10px;
+}
+
+.skip:focus {
+    top: 10px;
+}
+
+/* Smaller heading on phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+}
